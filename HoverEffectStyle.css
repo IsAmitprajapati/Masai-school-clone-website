@@ -1,0 +1,23 @@
+/***Register*****/
+.Top p:hover{
+    background-color: pink;
+    border-radius: 10px;
+}
+
+/***login******/
+.login:hover{
+    background-color:pink;
+}
+.CoursesButton:hover{
+    color:red;
+    cursor: pointer;
+}
+.Navbar p a:hover{
+    color:red;
+    cursor:pointer;
+}
+.ApplyNowButton:hover{
+    background-color: #ba1c1c;
+    cursor: pointer;
+}
+/*********************************************************************/

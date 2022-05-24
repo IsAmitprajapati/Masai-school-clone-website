@@ -1,0 +1,146 @@
+@media screen and (max-width:700px) {
+    .Top{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 1px;
+        font-size: 14px;
+        height: 80px;
+        
+    
+    }
+    .Top p{
+        padding: 3px 5px;
+    }
+    
+   .CoursesButton,.showCourse,/*.Navbar,*/.ApplyNowButton{ 
+       display: none;
+   }
+   
+   .headerContainer{
+       padding:0 0;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       height: 70px;
+       
+   }
+   .login{
+    border:none;
+    position: relative;
+    right: -40px;
+ 
+   }
+
+    /**********HumberButton*******/
+    .HumberButton{
+        -webkit-appearance: none;
+        width:30px;
+        height: 30px;
+        position: relative;
+        display: block;
+        padding:3px;
+        
+    }
+    .HumberButton::before{
+        content: "\f0c9";
+        font-size: 25px;
+        font-weight: 900;
+        font-family: "font awesome 6 free";
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .HumberButton:checked::before{
+        content: "\f00d";
+        font-size: 25px;
+        font-weight: 900;
+        font-family: "font awesome 6 free";
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /******************/
+    
+    /******************/
+    #MobileViewCourse{
+        box-shadow: -7px 7px 15px rgba(0,0,0,0.1);
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        position: absolute;
+        background-color: white;
+        z-index: -1;
+    
+    }
+
+    /***************/
+    .showCourse{
+        position: absolute;
+        transform: translate(-220px, 220px);
+        background-color: white;
+        box-shadow: none;
+        display: none;
+        z-index: 1;
+    }
+    .Navbar{
+        position: absolute;
+        top:500px;
+        left:0;
+        display: none;
+        padding:0px 10px;
+        background-color: white;
+        z-index: 1;
+    }
+    .Navbar p a{
+        color:#000;
+        text-decoration: none;
+    }
+    .Navbar p{
+        margin: 5px 0px;
+       
+    }
+
+
+    /*****BreakingNews******/
+    .BreakingNews{
+        display:none;
+    }
+
+    /************************/
+    .appyandheading{
+        height: 124px;
+        padding-top:100px;
+        padding-bottom:100px;
+        width: auto;
+   
+    }
+    .appyandheading h1{
+        font-size: 1.5rem;
+        width: 300px;
+        height: 64px;
+        font-weight: 800;
+        line-height: 2rem;
+        word-wrap: break-word;
+    }
+    .textInside{
+        padding:20px 0px;
+    }
+    .appyandheading p{
+        font-size: 1rem;
+        width: auto;
+    }
+     .appyandheading img{
+        position: relative;
+        top:-25px;
+        width: 170px;
+        z-index: -1;
+    }
+    .ApplyNowButton{
+        display: none;
+    }
+
+}

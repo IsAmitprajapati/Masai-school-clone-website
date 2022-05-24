@@ -1,0 +1,1114 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.Top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+    background-color: #000;
+    color:white;
+    font-size: 17px;
+}
+.Top p{
+    color:red;
+    padding:10px 5px;
+    font-size: 12px;
+    margin:7px 0px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Top p a{
+    text-decoration: none;
+    color:red;
+}
+
+/*********headerContainer****************/
+.headerContainer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction: row;
+    height: 88px;
+    box-shadow: 7px 7px 15px rgba(0,0,0,0.1);
+    letter-spacing: 0.5px;
+    position:sticky;
+    width: 100%;
+    top:0;
+    background-color: white;
+    z-index: 3;
+
+}
+.logo{
+    padding-left: 40px;
+}
+.header{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    width: auto ; /**80%***/
+    padding-right: 40px;
+     
+}
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+}
+.login{
+    width: 82px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:red;
+    border:1px solid red;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    font-family: serif;
+    cursor: pointer;
+}
+.login a{
+    text-decoration: none;
+    color:red;
+}
+ .ApplyNowButton{
+    width: 200px;
+    height: 45px;
+    background-color:red;
+    color:white;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+    margin: 0px 15px;  /********/
+}
+.ApplyNowButton a{
+    color:white;
+    text-decoration: none;
+}
+.CoursesButton{
+    background-color:transparent;
+    border:none;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:107px;
+    letter-spacing: 1px;   
+}
+.Navbar p{
+    letter-spacing: 1px;
+    margin: 0px 20px;   /***/
+}
+.Navbar p a{
+    text-decoration: none;
+    color:black;
+} 
+/*************************************************************************************************/
+/*****showCourse*******/
+.showCourse{    
+    position: absolute;
+    transform: translate(-40px,165px);
+    width:300px;
+    padding:15px;
+    background-color:white;
+    box-shadow: -7px -7px 15px rgba(0,0,0,0.1),
+    7px 7px 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
+   display:none;
+}
+.CourseMenuGroup{
+    display: flex;
+    flex-direction: column;
+}
+.CourseMenuGroup p{ /*Full time or past time*/
+    font-size: 16px;
+
+}
+.CourseMenuGroup a{  /*course name design**/
+    padding:15px 5px 15px 20px;
+    text-decoration: none;
+}
+
+.CourseMenuGroup .CourseName i{
+    font-size: 15px;
+    color:red;
+    
+}
+.CourseMenuGroup .CourseName span{
+    display: flex;
+    justify-content: space-between;
+}
+.CourseMenuGroup .CourseName span p{
+    font-size: 18px;
+    color:#000;
+
+}
+.CourseWeeks{
+    font-size: 15px;
+    color:#ccc;
+}
+/***************HumberButton*************/
+.HumberButton{
+    display: none;
+}
+/*********BreakingNews**/
+.BreakingNews{
+    width: 100%;
+    object-fit: cover;
+}
+.BreakingNews img{
+    width: 100%;
+    
+}
+
+
+/**************appyandheading*************/
+.appyandheading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+}
+.textInside{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.appyandheading h1{
+    font-size: 3rem;
+    width:500px;
+    height: 124px;
+    font-weight: 900;
+    text-align: center;
+    word-wrap: break-word;
+
+}
+.appyandheading p{
+    width: 448px;
+    height: 34px;
+    font-size: 1.7rem;
+    text-align: center;
+    word-wrap: break-word;
+}
+.appyandheading img{
+    position: relative;
+    top:-21px;
+} 
+/****************/
+body{
+    overflow-x: hidden;
+}
+/***************/
+/*********image section stude*******/
+.StudentImage1{
+    height: 300px;
+    width:100%;
+    background-image: url("/Images/stud_image_.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.StudentImage2{
+    height: 300px;
+    width:100%;
+    background-image: url("/Images/stud_image_.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    
+}
+.StudentImage3{
+    height: 300px;
+    width:100%;
+    background-image: url("/Images/stud_image_.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.PictureSection{
+    width: auto;
+    height: 350px;
+    overflow: hidden;
+}
+.pictureMarquee{
+    width: 3900px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    animation-name: marqueeAnimation;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-play-state:running;
+    animation-direction: reverse;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+    
+      
+}
+.pictureMarquee:hover{
+    animation-play-state: paused; 
+}
+@keyframes marqueeAnimation{
+    0%{
+      transform: translateX(-1300px);
+    } 
+  
+
+}
+
+
+/***********************************************************************************************/
+.CompanyLogoContainer{
+    width: 96px;
+    height: 96px;
+    margin:0px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CompanyLogoUP_part1,.companyLogoDown_part1{
+    display: flex;
+
+}
+.CompanyLogoUp,.CompanyLogoDown{
+    display: flex;
+    animation-name: HiringPartnersAnimation;
+    animation-duration:60s;
+    animation-iteration-count: infinite;
+    animation-play-state:running;
+    animation-direction: reverse;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+}
+.CompanyLogoUp:hover,.CompanyLogoDown:hover{
+    animation-play-state:paused;
+}
+.HiringPartners{
+    width: auto;
+    overflow: hidden;
+}
+
+@keyframes HiringPartnersAnimation{
+    0%{
+        transform: translateX(-1300px);
+      } 
+}
+/******************************/
+.OurMInd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    overflow: hidden;
+}
+.OurMInd h1{
+    font-size: 40px;
+    margin: 10px;
+}
+.OurMInd h2{
+    font-size: 30px;
+    margin-top: 20px;
+    color:rgb(65, 63, 63);
+}
+/********************** ********************/
+.ReviewContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    margin:100px 0px;
+    
+}
+.ReviewContainer h1{
+    width: 400px;
+    height: 200px;
+    text-align:center;
+    margin: 10px 0px;
+}
+.Reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: auto;
+    
+}
+.Reviews_1{
+    width: 280px;
+    height: 380px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius:20px;
+    
+
+}
+.Reviews_1 img{
+    width: 280px;
+    height: 296px;
+    border-radius:20px;
+}
+.PlaceCompany img{
+   width:100px;
+   height: 100px;
+
+}
+.SayAndCompany{
+    display: flex;
+    padding:10px;
+    font-size: 18px;
+}
+.SayAndCompany i{
+    padding-right:10px;
+}
+.SayAndCompany p{
+    height: 150px;
+}
+
+.ReviewPersonName{
+    font-size: 20px;
+    position: relative;
+    top:30px;
+}
+.ReviewsDEtails{
+    position: relative;
+    top:-90px;
+    border-radius: 15px;
+    width: 260px;
+    height: 454px;   
+    background-color:white;
+    padding:10px;
+
+}
+/***************************************/
+.MoreStoriesButton{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size:20px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color:red;
+    color:white;
+    border-radius: 7px;
+}
+
+.stepNumber{
+    font-size: 30px;
+
+}
+/***************packageRalatiedNews*********************/
+.packageRalatiedNews{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 70px 0px;
+}
+.packageDetailsAndEnrollment{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center; 
+}
+.Enrolled{
+    width:620px;
+    height:250px;
+    background-color:royalblue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    font-size:40px;
+    text-align:center;
+    border-radius:30px;
+    color:white;
+    font-weight:900;
+    margin:10px;
+}
+.Enrolled span span{
+    color : orange;
+    font-weight:900;
+}
+.lowestLPA{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:300px;
+    height:300px;
+    background-color:rgb(13, 158, 168);
+    border-radius:10px;
+    margin:10px;
+    font-size: 45px;
+    text-align: center;
+    color:white;
+    font-weight:900;
+}
+.heightLPA{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:300px;
+    height:300px;
+    background-color:rgb(83, 189, 83);
+    border-radius:10px;
+    margin:10px;
+    font-size: 40px;
+    text-align: center;
+    color:white;
+    font-weight:900; 
+}
+/********MasaiInTheNews************/
+.MasaiInTheNews{
+    height: 570px;
+    width:650px;
+    background-color:rgb(133, 108, 223);
+    margin:10px;
+    border-radius: 20px;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+.MasaiInTheNews img{
+    width: 576px;
+    height:318px;
+}
+.MasaiInTheNews_text{
+    font-size:45px;
+    font-weight:900;
+    color:white;
+    margin:60px 0px 0px 0px;
+}
+.MasaiInTheNews button{
+    border:none;
+    border:1px solid white;
+    background-color:transparent;
+    font-size:15px;
+    font-weight:bold;
+    padding: 10px;
+    margin:30px 0px;
+    color:white;
+}
+
+/******************stepToJoinContainer**************/
+.stepToJoinContainer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    height: 500px;
+    margin: 30px 0px;
+}
+.stepToJoinContainer h2{
+    font-size: 40px;
+    text-align:center;
+    margin :40px 0px
+}
+.stepToJoin{
+    background-color:rgb(240, 229, 200);
+    width:100%;
+    height: auto;
+    padding:50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.step{
+    background-color:white;
+    width:200px;
+    height: 200px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    z-index: 2;
+    
+}
+.stepNumber{
+    font-size: 35px;
+    text-align:center;
+    color:rgb(170, 147, 82);
+}
+.stepDetails{
+    font-size:20px;
+    width: 150px;
+    text-align: center;
+    margin-top:15px;
+}
+
+/*********/
+.dotted{
+    width: 1px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position:relative;
+    
+}
+.dotted::before{
+    width:100px;
+    height: 0px;
+    border:3px dotted rgb(170, 147, 82);
+    position: absolute;
+    content: "";
+   z-index: 1;
+}
+
+
+/***********************Courses ************************/
+.threeField{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.threeField h1{
+    text-align:center;
+    font-size: 35px;
+}
+.threeFieldName{
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin:40px 0px;
+}
+.SoftwareDevelopement{
+    width: 390px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: -10px -10px 15px rgba(0,0,0,0.1),
+    10px 10px 15px rgba(0,0,0,0.1);
+}
+.TopPart{
+    height: 200px;
+}
+.SoftwareDevelopement1{
+    background-color: #6E71CC;
+}
+.DataAnalytics{
+    background-color: #6FCD9E;
+}
+.designback{
+    background-color: #CC926E;
+}
+.ImageBackground1{
+    height: 200px;
+    width: 100%;
+    background-color: cover;
+    background-repeat: no-repeat;
+    background-image: url('./Images/purple.png');
+    background-position: right;
+}
+.ImageBackground2{
+    height: 200px;
+    width: 100%;
+    background-color: cover;
+    background-repeat: no-repeat;
+    background-image: url('./Images/green.png');
+    background-position: right;
+}
+
+.ImageBackground3{
+    height: 200px;
+    width: 100%;
+    background-color: cover;
+    background-repeat: no-repeat;
+    background-image: url('./Images/brown.png');
+    background-position: right;
+}
+.textdecorationthreefied{
+    font-size: 40px;
+    font-weight: 900;
+    color:white;
+    position: relative;
+    height: 200px;
+    top:100px;
+    left:20px
+}
+.DataAnalytics .textdecorationthreefied,
+.designback .textdecorationthreefied{
+    top:125px;
+}
+.DescriptionPart{
+    padding:25px;
+    line-height: 20px;
+    font-size: 18px;
+    color:rgb(83, 83, 83);
+    height: 80px;
+}
+.earningAndTimeDetails{
+    padding:20px 20px;
+}
+.earningMorethan5LPA,
+.fulltimeandPartTimeDetailsCourses,
+.ProgramsInCourse{
+    display: flex;
+    padding:3px 0px;
+    font-size: 18px;
+}
+
+.earningMorethan5LPA i,
+.fulltimeandPartTimeDetailsCourses i,
+.ProgramsInCourse i{
+    width: 30px;
+}
+.viewCourseButton{
+    width: 100%;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;    
+    
+}
+.viewCourseButton button{
+    border:none;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.Nsdcprogram{
+    display: flex;
+    justify-content: space-evenly;
+    margin:70px 0px;
+    
+}
+.textNsdacline{
+    width: 420px;
+    padding:5px;
+    font-size: 16px;
+}
+
+.textNsdacline h1{
+    width: 400px;
+    margin:20px 0px;
+    font-size: 40px;
+}
+.nsdcvideo{
+    width: 650px;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/********************************/
+.Instructors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.Instructors_top{
+    width: 450px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Instructors_top h1{
+    width: 350px;
+    font-size: 35px;
+    padding:10px 0px;
+}
+.Instructors_top p{
+    width: 350px;
+}
+.Instructors_profiledes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Instructors_profile{
+    width: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:15px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+}
+.Instructors_profile img{
+    width: 300px;
+}
+.Instructors_company img{
+    height: 50px;
+    width: 150px;
+    
+}
+.seemoreButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seemoreButton button{
+    width: 130px;
+    height:45px;
+    font-size: 15px;
+    color:white;
+    background-color:Red;
+    border:none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.seemoreButton button i{
+    padding:0px 7px;
+}
+
+
+/**********************Social Feed*******************/
+.MasaiSocialFeed{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    justify-content:center;
+    margin:70px 0px;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.MasaiSocialFeed h1{
+    font-size: 35px;
+    margin-bottom:40px;
+}
+.MasaiSocialFeed1{
+    width: 100%;
+    height:90%;
+    background-color:white;
+    overflow-x: scroll;
+
+   
+    
+}
+/*****************/
+.MasaiSocialFeed1::-webkit-scrollbar{
+    width: 0px;
+    height: 10px;
+}
+.MasaiSocialFeed1::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+.MasaiSocialFeed1::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+.MasaiSocialFeed1::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+/**********/
+.MasaisocialfeedTwitter{
+    width: 2500px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.twiter{
+    border-radius: 20px;
+    border:0.5px solid #ccc;
+}
+/**************************/
+.WhatcompanySaying{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.WhatcompanySaying h1{
+    font-size: 35px;
+    width: 450px;
+    text-align: center;
+    
+}
+.Student_profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+.student_companyWork img{
+    height: 30px;
+}
+.Student_sayingcompnat{
+    width: 600px;
+    padding:25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    margin: 10px;
+}
+.ourStudentSayingCompnay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.Student_profile{
+    display: flex;
+}
+
+.detailsname{
+    padding:0px 20px;
+}
+.detailsname p{
+    color:#2D3748;
+}
+.StudentSaying_details{
+    padding:20px 10px;
+    color:rgb(121, 121, 121);
+    line-height: 22px;
+    font-size: 16px;
+    height:110px;
+    overflow: hidden;
+    word-break: keep-all;
+}
+
+.studentbackgroundcolor1{
+   background-color: white; 
+}
+.studentbackgroundcolor2{
+  background-color: rgb(237,255,248);  
+}
+.studentbackgroundcolor3{
+  background-color: rgb(255,249,230);  
+}
+.studentbackgroundcolor4{
+   background-color: white; 
+}
+
+
+
+
+
+.displayTranslate{
+    animation: translateDisplay 1s;
+    
+}
+
+@keyframes translateDisplay{
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.tribalBAckgroundImage1{
+    width: 250px;
+    height: 250px;
+    background-image: url('https://masai-website-images.s3.ap-south-1.amazonaws.com/blog1_4019132f67.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tribalBAckgroundImage2{
+    width: 250px;
+    height: 250px;
+    background-image: url('https://masai-website-images.s3.ap-south-1.amazonaws.com/blog2_0e0b8fc3dc.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.MasaiTribe{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin:100px 0px;
+}
+.MasaiTribal_imge{
+    display: flex;
+}
+.MasaiTribe_Text{
+    width: 500px;
+}
+.MasaiTribe_Text h1{
+    font-size: 42px;
+    width: 410px;
+}
+.MasaiTribe_Text p{
+    color:rgb(102, 102, 102);
+    font-size: 18px;
+    margin:10px 0px;
+}
+.MasaiTribe_Text button{
+    border:2px solid red;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 10px;
+    color:red;
+    margin:10px 0px;
+
+}
+.blogposttext{
+    height: 150px;
+    width: 230px;
+    background-color: royalblue;
+    color:white;
+    font-size:22px;
+    text-align: center;
+    padding:10px;
+    font-weight: 900;
+}
+.tribalImage{
+    margin:0px 20px;
+    border-radius:20px;
+    overflow: hidden;
+}
+.bolgpost{
+    position:relative;
+    top:220px;
+    background-color: white;
+    display: inline;
+    padding:5px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/*********************************/
+.discord{
+    background-color: rgb(246,237,231);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.havemore{
+    background-color: rgb(255,249,229);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.discordandmore{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    
+}
+.discord h1{
+    font-size: 40px;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.havemore h1{
+    margin-bottom: 100px;
+    font-size: 40px;
+    width: 500px;
+    text-align: center;
+}
+.discorbutton,.havemorebutton{
+    width: 250px;
+    height: 50px;
+    border:2px solid transparent;
+    padding:10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.discorbutton:hover{
+    border-color:royalblue ;
+}
+.havemorebutton{
+    border-color:red ;
+    color:red;
+}
+.havemorebutton:hover{
+    background-color: rgba(255,0,0,0.2);
+}
+.discorbutton span{
+    padding:0px 20px;
+}
+.discord .springimage{
+    position: absolute;
+}
+.springimage{
+    position: relative;
+    width: 100px;
+    margin-left: 150px;
+}
+
+.masaiFooter{
+    background-color: #000;
+    color:white;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.footertop{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    padding:10px 50px;
+    align-items: center;
+}
+.footertopright{
+    font-size: 17px;
+    color:#ccc;
+}
+.footertopright i{
+    padding:0px 10px;
+}
+.footermiddle{
+    display: flex;
+    padding:20px 40px;
+    
+}
+.footermiddle ul {
+    width: 200px;
+    font-size: 20px;
+    color:white;
+}
+.footermiddle ul a{color:white;text-decoration: none; line-height: 30px; }
+.footermiddle ul a:hover{color:red}
+.footermiddle ul li{
+    list-style: none;
+}
+.footerbootom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 40px;
+    color:#ccc;
+}
+.footerbootom a{
+    color:#ccc;
+    text-decoration: none;
+}
+
+
+
+

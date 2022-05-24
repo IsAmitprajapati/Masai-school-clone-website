@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="icon" href="/fevicon/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="login_Container">
+        <div class="loginLogo">
+            <img src="/Images/loginImage/masaiLogo.svg">
+        </div>
+        <div class="textSign">Sign In</div>
+
+        <form>
+            <div class="inputContainer">
+                <label for="Email">Email</label>
+                <div class="InputPassword">
+                    <input type="Email" placeholder="Enter Email" id="Email" onchange="ButtonColor()">
+                </div>
+            </div>
+            <div class="inputContainer">
+                <label for="password" class="passwordForgotPassword"><span>Password</span><span><a href="#">Forgot Password?</a></span></label>
+                <div class="InputPassword">
+                    <input type="password" placeholder="Enter Password" id="password" onchange="ButtonColor()">
+                    <input type="checkbox" id="ShowPassword">
+                </div>
+            </div>
+    
+            <button class="signButton" type="submit" id="submitButton">SIGN IN</button>
+
+            <div class="loginWithGoogle">
+                <span><img src="/Images/loginImage/googleLogo.svg"></span>
+                <span>CONTINUE WITH GOOGLE</span>
+            </div>
+        </form>
+        <p class="accountCreate">Don't have an account?<span class="SignupLink"><a href="./signUp.html">Sign Up</a></span></p>
+
+        
+
+            
+
+        <div class="TermsAndCondition">
+            <span>&#169;</span>2022 by Masai School
+            Privacy Policy & Terms and Conditions
+        </div>
+    </div>
+
+
+    <script src="loginJs.js"></script>
+</body>
+</html>
