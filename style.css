@@ -1110,6 +1110,11 @@ body{
     text-decoration: none;
 }
 
+.masaiFooter hr{
+    width: 92%;
+    margin:5px 40px;
+    border-color: #ccc;
 
+}
 
 
