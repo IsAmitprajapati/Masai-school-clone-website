@@ -3,5 +3,5 @@ Masai school clone website frontend
 
 using html css and javascript
 
-Live : 
+Live : https://masai-school-clone-isamitprajapati.vercel.app/
 
